@@ -1,11 +1,193 @@
 window.addEventListener('load',()=>{
     let divboard=document.querySelector("#board");
+    //CHECK
+    let check=0;
     //Array
     let child=[];
+    let childstate=["","","","","","","","",""];
     for (var num=0; num<=8;num++){
         child[num]=divboard.children[num];
         child[num].className="square";
+        
+        
     }
+    child[0].addEventListener("click",()=>{
+        if(childstate[0]==""){
+            check+=1;
+        }
+        if(childstate[0]!=""){}
+        //check+=1;
+        if(check%2==0){
+            childstate[0]="X";
+            child[0].innerHTML="X";
+            child[0].className="square X";
+        }
+        else{
+            childstate[0]="O";
+            child[0].innerHTML="O";
+            child[0].className="square O";
+        }        
+        console.log(childstate);
+                    //console.log("Raised");
+    });
+    child[1].addEventListener("click",()=>{
+        if(childstate[1]==""){
+            check+=1;
+        }
+        if(childstate[1]!=""){}
+        //check+=1;
+        else if(check%2==0){
+            childstate[1]="X";
+            child[1].innerHTML="X";
+            child[1].className="square X";            
+        }
+        else{
+            childstate[1]="O";
+            child[1].innerHTML="O";
+            child[1].className="square O";
+        }   
+        console.log(childstate);
+                    //console.log("Raised");
+    });
+    child[2].addEventListener("click",()=>{
+        if(childstate[2]==""){
+            check+=1;
+        }
+        if(childstate[2]!=""){}
+        //check+=1;
+        if(check%2==0){
+            childstate[2]="X";
+            child[2].innerHTML="X";
+            child[2].className="square X";
+        }
+        else{
+            childstate[2]="O";
+            child[2].innerHTML="O";
+            child[2].className="square O";
+        }   
+        console.log(childstate);
+                    //console.log("Raised");
+    });
+    child[3].addEventListener("click",()=>{
+        if(childstate[3]==""){
+            check+=1;
+        }
+        if(childstate[3]!=""){}
+        //check+=1;
+        if(check%2==0){
+            childstate[3]="X";
+            child[3].innerHTML="X";
+            child[3].className="square X";
+        }
+        else{
+            childstate[3]="O";
+            child[3].innerHTML="O";
+            child[3].className="square O";
+        }   
+        console.log(childstate);
+                    //console.log("Raised");
+    });
+    child[4].addEventListener("click",()=>{
+        if(childstate[4]==""){
+            check+=1;
+        }
+        if(childstate[4]!=""){}
+        //check+=1;
+        if(check%2==0){
+            childstate[4]="X";
+            child[4].innerHTML="X";
+            child[4].className="square X";
+        }
+        else{
+            childstate[4]="O";
+            child[4].innerHTML="O";
+            child[4].className="square O";
+        }   
+        console.log(childstate);
+                    //console.log("Raised");
+    });
+    child[5].addEventListener("click",()=>{
+        if(childstate[5]==""){
+            check+=1;
+        }
+        if(childstate[5]!=""){}
+        //check+=1;
+        if(check%2==0){
+            childstate[5]="X";
+            child[5].innerHTML="X";
+            child[5].className="square X";
+        }
+        else{
+            childstate[5]="O";
+            child[5].innerHTML="O";
+            child[5].className="square O";
+        }   
+        console.log(childstate);
+                    //console.log("Raised");
+    });
+    child[6].addEventListener("click",()=>{
+        if(childstate[6]==""){
+            check+=1;
+        }
+        if(childstate[6]!=""){}
+        //check+=1;
+        if(check%2==0){
+            childstate[6]="X";
+            child[6].innerHTML="X";
+            child[6].className="square X";
+        }
+        else{
+            childstate[6]="O";
+            child[6].innerHTML="O";
+            child[6].className="square O";
+        }   
+        console.log(childstate);
+                    //console.log("Raised");
+    });
+    child[7].addEventListener("click",()=>{
+        if(childstate[7]==""){
+            check+=1;
+        }
+        if(childstate[7]!=""){}
+        //check+=1;
+        if(check%2==0){
+            childstate[7]="X";
+            child[7].innerHTML="X";
+            child[7].className="square X";
+        }
+        else{
+            childstate[7]="O";
+            child[7].innerHTML="O";
+            child[7].className="square O";
+        }   
+        console.log(childstate);
+                    //console.log("Raised");
+    });
+    child[8].addEventListener("click",()=>{
+        if(childstate[8]==""){
+            check+=1;
+        }
+        if(childstate[8]!=""){}
+        //check+=1;
+        if(check%2==0){
+            childstate[8]="X";
+            child[8].innerHTML="X";
+            child[8].className="square X";
+        }
+        else{
+            childstate[8]="O";
+            child[8].innerHTML="O";
+            child[8].className="square O";
+        }   
+        console.log(childstate);
+                    //console.log("Raised");
+    });
+    
+    
+
+    
+
+});
 
     //divboard.style.backgroundColor="black";
     /*let child0=divboard.children[0];
@@ -27,4 +209,3 @@ window.addEventListener('load',()=>{
     child6.className="square";
     child7.className="square";
     child8.className="square";*/
-});
