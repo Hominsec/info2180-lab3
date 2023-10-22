@@ -11,7 +11,11 @@ window.addEventListener('load',()=>{
         
         
     }
+    //ONCLICK
     child[0].addEventListener("click",()=>{
+        child[0].style.background="";
+        child[0].style.borderColor="";
+        child[0].style.cursor="";
         if(childstate[0]==""){
             check+=1;
         }
@@ -31,6 +35,9 @@ window.addEventListener('load',()=>{
                     //console.log("Raised");
     });
     child[1].addEventListener("click",()=>{
+        child[1].style.background="";
+        child[1].style.borderColor="";
+        child[1].style.cursor="";
         if(childstate[1]==""){
             check+=1;
         }
@@ -50,6 +57,9 @@ window.addEventListener('load',()=>{
                     //console.log("Raised");
     });
     child[2].addEventListener("click",()=>{
+        child[2].style.background="";
+        child[2].style.borderColor="";
+        child[2].style.cursor="";
         if(childstate[2]==""){
             check+=1;
         }
@@ -69,6 +79,9 @@ window.addEventListener('load',()=>{
                     //console.log("Raised");
     });
     child[3].addEventListener("click",()=>{
+        child[3].style.background="";
+        child[3].style.borderColor="";
+        child[3].style.cursor="";
         if(childstate[3]==""){
             check+=1;
         }
@@ -88,6 +101,9 @@ window.addEventListener('load',()=>{
                     //console.log("Raised");
     });
     child[4].addEventListener("click",()=>{
+        child[4].style.background="";
+        child[4].style.borderColor="";
+        child[4].style.cursor="";
         if(childstate[4]==""){
             check+=1;
         }
@@ -107,6 +123,9 @@ window.addEventListener('load',()=>{
                     //console.log("Raised");
     });
     child[5].addEventListener("click",()=>{
+        child[5].style.background="";
+        child[5].style.borderColor="";
+        child[5].style.cursor="";
         if(childstate[5]==""){
             check+=1;
         }
@@ -126,6 +145,9 @@ window.addEventListener('load',()=>{
                     //console.log("Raised");
     });
     child[6].addEventListener("click",()=>{
+        child[6].style.background="";
+        child[6].style.borderColor="";
+        child[6].style.cursor="";
         if(childstate[6]==""){
             check+=1;
         }
@@ -145,6 +167,9 @@ window.addEventListener('load',()=>{
                     //console.log("Raised");
     });
     child[7].addEventListener("click",()=>{
+        child[7].style.background="";
+        child[7].style.borderColor="";
+        child[7].style.cursor="";
         if(childstate[7]==""){
             check+=1;
         }
@@ -164,6 +189,9 @@ window.addEventListener('load',()=>{
                     //console.log("Raised");
     });
     child[8].addEventListener("click",()=>{
+        child[8].style.background="";
+        child[8].style.borderColor="";
+        child[8].style.cursor="";
         if(childstate[8]==""){
             check+=1;
         }
@@ -182,6 +210,108 @@ window.addEventListener('load',()=>{
         console.log(childstate);
                     //console.log("Raised");
     });
+
+       //ONHOVER
+    child[0].addEventListener("mouseover",()=>{
+        child[0].style.background="var(--coral)";
+        child[0].style.borderColor="var(--lightblue)";
+        child[0].style.cursor="pointer";
+    });
+    child[0].addEventListener("mouseleave",()=>{
+        child[0].style.background="";
+        child[0].style.borderColor="";
+        child[0].style.cursor="";
+
+    });
+
+    child[1].addEventListener("mouseover",()=>{
+        child[1].style.background="var(--coral)";
+        child[1].style.borderColor="var(--lightblue)";
+        child[1].style.cursor="pointer";
+    });
+    child[1].addEventListener("mouseleave",()=>{
+        child[1].style.background="";
+        child[1].style.borderColor="";
+        child[1].style.cursor="";
+    });
+
+    child[2].addEventListener("mouseover",()=>{
+        child[2].style.background="var(--coral)";
+        child[2].style.borderColor="var(--lightblue)";
+        child[2].style.cursor="pointer";
+    });
+    child[2].addEventListener("mouseleave",()=>{
+        child[2].style.background="";
+        child[2].style.borderColor="";
+        child[2].style.cursor="";
+    });
+
+    child[3].addEventListener("mouseover",()=>{
+        child[3].style.background="var(--coral)";
+        child[3].style.borderColor="var(--lightblue)";
+        child[3].style.cursor="pointer";
+    });
+    child[3].addEventListener("mouseleave",()=>{
+        child[3].style.background="";
+        child[3].style.borderColor="";
+        child[3].style.cursor="";
+    });
+
+    child[4].addEventListener("mouseover",()=>{
+        child[4].style.background="var(--coral)";
+        child[4].style.borderColor="var(--lightblue)";
+        child[4].style.cursor="pointer";
+    });
+    child[4].addEventListener("mouseleave",()=>{
+        child[4].style.background="";
+        child[4].style.borderColor="";
+        child[4].style.cursor="";
+    });
+
+    child[5].addEventListener("mouseover",()=>{
+        child[5].style.background="var(--coral)";
+        child[5].style.borderColor="var(--lightblue)";
+        child[5].style.cursor="pointer";
+    });
+    child[5].addEventListener("mouseleave",()=>{
+        child[5].style.background="";
+        child[5].style.borderColor="";
+        child[5].style.cursor="";
+    });
+
+    child[6].addEventListener("mouseover",()=>{
+        child[6].style.background="var(--coral)";
+        child[6].style.borderColor="var(--lightblue)";
+        child[6].style.cursor="pointer";
+    });
+    child[6].addEventListener("mouseleave",()=>{
+        child[6].style.background="";
+        child[6].style.borderColor="";
+        child[6].style.cursor="";
+    });
+
+    child[7].addEventListener("mouseover",()=>{
+        child[7].style.background="var(--coral)";
+        child[7].style.borderColor="var(--lightblue)";
+        child[7].style.cursor="pointer";
+    });
+    child[7].addEventListener("mouseleave",()=>{
+        child[7].style.background="";
+        child[7].style.borderColor="";
+        child[7].style.cursor="";
+    });
+    
+    child[8].addEventListener("mouseover",()=>{
+        child[8].style.background="var(--coral)";
+        child[8].style.borderColor="var(--lightblue)";
+        child[8].style.cursor="pointer";
+    });
+    child[8].addEventListener("mouseleave",()=>{
+        child[8].style.background="";
+        child[8].style.borderColor="";
+        child[8].style.cursor="";
+    });
+    
     
     
 
