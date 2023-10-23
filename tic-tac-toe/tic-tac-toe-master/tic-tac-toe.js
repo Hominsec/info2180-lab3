@@ -1,6 +1,8 @@
 window.addEventListener('load',()=>{
     let divboard=document.querySelector("#board");
     let status=document.querySelector("#status");
+    let button=document.querySelector(".btn");
+    
     //CHECK
     let check=0;
     let mssg='';
@@ -11,7 +13,17 @@ window.addEventListener('load',()=>{
     for (var num=0; num<=8;num++){
         child[num]=divboard.children[num];
         child[num].className="square";
-    }
+    }//BTN
+    button.addEventListener("click",()=>{
+        for (var num=0; num<=8;num++){
+            child[num].innerHTML="";
+            status.innerHTML="Move your mouse over a square and click to play an X or an O.";
+            status.className="status";
+        }
+        childstate=["","","","","","","","",""];
+
+    });
+    
     //FUNC
     function func(){
         if(fin!=""){
@@ -138,6 +150,7 @@ window.addEventListener('load',()=>{
     
 
     //
+    
     child[0].addEventListener("click",()=>{
         child[0].style.background="";
         child[0].style.borderColor="";
