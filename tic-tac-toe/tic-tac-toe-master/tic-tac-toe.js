@@ -1,23 +1,150 @@
 window.addEventListener('load',()=>{
     let divboard=document.querySelector("#board");
+    let status=document.querySelector("#status");
     //CHECK
     let check=0;
+    let mssg='';
+    let fin="";
     //Array
     let child=[];
     let childstate=["","","","","","","","",""];
     for (var num=0; num<=8;num++){
         child[num]=divboard.children[num];
         child[num].className="square";
-        
-        
     }
+    //FUNC
+    function func(){
+        if(fin!=""){
+            console.log(fin)
+            return;
+        }
+        //console.log("TEST");
+        if((childstate[0]=='X')&&(childstate[1]=='X')&&(childstate[2]=='X')){
+            mssg="Congratulations! X is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[3]=='X')&&(childstate[4]=='X')&&(childstate[5]=='X')){
+            mssg="Congratulations! X is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[6]=='X')&&(childstate[7]=='X')&&(childstate[8]=='X')){
+            mssg="Congratulations! X is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[0]=='X')&&(childstate[3]=='X')&&(childstate[6]=='X')){
+            mssg="Congratulations! X is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[1]=='X')&&(childstate[4]=='X')&&(childstate[7]=='X')){
+            mssg="Congratulations! X is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[2]=='X')&&(childstate[5]=='X')&&(childstate[8]=='X')){
+            mssg="Congratulations! X is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[2]=='X')&&(childstate[4]=='X')&&(childstate[6]=='X')){
+            mssg="Congratulations! X is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[0]=='X')&&(childstate[4]=='X')&&(childstate[8]=='X')){
+            mssg="Congratulations! X is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+          //O
+        if((childstate[0]=='O')&&(childstate[1]=='O')&&(childstate[2]=='O')){
+            mssg="Congratulations! O is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[3]=='O')&&(childstate[4]=='O')&&(childstate[5]=='O')){
+            mssg="Congratulations! O is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[6]=='O')&&(childstate[7]=='O')&&(childstate[8]=='O')){
+            mssg="Congratulations! O is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[0]=='O')&&(childstate[3]=='O')&&(childstate[6]=='O')){
+            mssg="Congratulations! O is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[1]=='O')&&(childstate[4]=='O')&&(childstate[7]=='O')){
+            mssg="Congratulations! O is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[2]=='O')&&(childstate[5]=='O')&&(childstate[8]=='O')){
+            mssg="Congratulations! O is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[2]=='O')&&(childstate[4]=='O')&&(childstate[6]=='O')){
+            mssg="Congratulations! O is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        if((childstate[0]=='O')&&(childstate[4]=='O')&&(childstate[8]=='O')){
+            mssg="Congratulations! O is the WInner!";
+            fin="Winner already decided";
+            status.innerHTML=mssg;
+            status.className="status you-won";
+            console.log(mssg);
+        }
+        
+    };
     //ONCLICK
+    
+
+    //
     child[0].addEventListener("click",()=>{
         child[0].style.background="";
         child[0].style.borderColor="";
         child[0].style.cursor="";
         if(childstate[0]==""){
             check+=1;
+            console.log(check);
         }
         if(childstate[0]!=""){}
         //check+=1;
@@ -31,6 +158,9 @@ window.addEventListener('load',()=>{
             child[0].innerHTML="O";
             child[0].className="square O";
         }        
+        if(check>=3){
+            func();
+        }
         console.log(childstate);
                     //console.log("Raised");
     });
@@ -53,6 +183,9 @@ window.addEventListener('load',()=>{
             child[1].innerHTML="O";
             child[1].className="square O";
         }   
+        if(check>=3){
+            func();
+        }
         console.log(childstate);
                     //console.log("Raised");
     });
@@ -74,7 +207,10 @@ window.addEventListener('load',()=>{
             childstate[2]="O";
             child[2].innerHTML="O";
             child[2].className="square O";
-        }   
+        }  
+        if(check>=3){
+            func();
+        } 
         console.log(childstate);
                     //console.log("Raised");
     });
@@ -97,6 +233,9 @@ window.addEventListener('load',()=>{
             child[3].innerHTML="O";
             child[3].className="square O";
         }   
+        if(check>=3){
+            func();
+        }
         console.log(childstate);
                     //console.log("Raised");
     });
@@ -119,6 +258,9 @@ window.addEventListener('load',()=>{
             child[4].innerHTML="O";
             child[4].className="square O";
         }   
+        if(check>=3){
+            func();
+        }
         console.log(childstate);
                     //console.log("Raised");
     });
@@ -141,6 +283,9 @@ window.addEventListener('load',()=>{
             child[5].innerHTML="O";
             child[5].className="square O";
         }   
+        if(check>=3){
+            func();
+        }
         console.log(childstate);
                     //console.log("Raised");
     });
@@ -162,7 +307,10 @@ window.addEventListener('load',()=>{
             childstate[6]="O";
             child[6].innerHTML="O";
             child[6].className="square O";
-        }   
+        } 
+        if(check>=3){
+            func();
+        }  
         console.log(childstate);
                     //console.log("Raised");
     });
@@ -185,6 +333,9 @@ window.addEventListener('load',()=>{
             child[7].innerHTML="O";
             child[7].className="square O";
         }   
+        if(check>=3){
+            func();
+        }
         console.log(childstate);
                     //console.log("Raised");
     });
@@ -207,6 +358,9 @@ window.addEventListener('load',()=>{
             child[8].innerHTML="O";
             child[8].className="square O";
         }   
+        if(check>=3){
+            func();
+        }
         console.log(childstate);
                     //console.log("Raised");
     });
@@ -311,6 +465,8 @@ window.addEventListener('load',()=>{
         child[8].style.borderColor="";
         child[8].style.cursor="";
     });
+    
+    
     
     
     
